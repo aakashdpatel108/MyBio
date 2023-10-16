@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section class="main">
+        <img src="mountain1.png" id="layer1">
+        <img src="mountain2.png" id="layer2">
+        <img src="text.png" id="text"> 
+    </section>
+
+    <section class="content">
+        <h1>Happy New Year!</h1>
+        
+        <p>I knew I could make it through everything I faced this year because of you. Thank you for your amazing friendship! Cheers!
+        </p>
+        <p id="p">-   Aakash</p>
+            
+    </section>
+    
+<!-- JAVASCRIPT-->
+
+<!-- Layer1-->
+<script type="text/javascript">
+
+var layer1 = document.getElementById('layer1')
+scroll = window.pageYOffset;
+document.addEventListener('scroll',
+function (e) {
+    var offset = window.pageYOffset; 
+    scroll = offset;
+    layer1.style.width = (100 + scroll/5) +'%'
+});
+</script>
+
+
+
+<!-- Layer2-->
+<script type="text/javascript">
+
+    var layer2 = document.getElementById('layer2')
+    scroll = window.pageYOffset;
+    document.addEventListener('scroll',
+    function (e) {
+        var offset = window.pageYOffset; 
+        scroll = offset;
+        layer2.style.width = (100 + scroll/5) +'%'
+        layer2.style.left = scroll/50 +'%'
+    });
+    </script>
+
+
+<!--Text-->
+<script type="text/javascript">
+
+    var text = document.getElementById('text')
+    scroll = window.pageYOffset;
+    document.addEventListener('scroll',
+    function (e) {
+        var offset = window.pageYOffset; 
+        scroll = offset;
+        layer2.style.width = (100 + scroll/5) +'%'
+        text.style.top = - scroll/20 +'%'
+    });
+    </script>
+    
+
+</body>
+</html>

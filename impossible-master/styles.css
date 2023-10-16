@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.impossible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* chnage the hight (needed while scrolling whole page) */
+    min-height: 100vh;
+    background: #000;
+}
+
+h2 {
+    font-size: 100px;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+h2 span {
+    transition: 1s;
+}
+
+h2:hover span:nth-child(1) {
+    margin-right: 10px;
+}
+
+
+/* Animation for ' */
+
+
+/* keyframe is like function ' */
+
+@keyframes animate {
+    0% {
+        content: "'";
+    }
+    50% {
+        color: white;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+    }
+    100% {
+        content: "'";
+    }
+}
+
+h2:hover .i {
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+}
+
+h2:hover span:nth-child(1)::after {
+    content: "";
+    animation: animate 2s linear infinite alternate;
+}
+
+h2:hover span:nth-child(2) {
+    margin-left: 20px;
+    color: #fff;
+    /* Animation for ' */
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+}

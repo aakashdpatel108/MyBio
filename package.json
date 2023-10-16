@@ -1,0 +1,14 @@
+{
+    "name": "bio",
+    "version": "1.0.0",
+    "description": "my port",
+    "main": "index.js",
+    "scripts": {
+        "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    },
+    "author": "aakash",
+    "license": "MIT",
+    "dependencies": {
+        "node-sass": "^4.12.0"
+    }
+}
