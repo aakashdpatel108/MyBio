@@ -10,9 +10,9 @@ catch (PDOException $e) {
 }
 
 // SQL Server Extension Sample Code:
-$connectionInfo = array("UID" => "localhost", "pwd" => "Aakash@123", "Database" => "biodb", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
-$serverName = "tcp:dbforbio.database.windows.net,1433";
-$conn = sqlsrv_connect($serverName, $connectionInfo);
+// $connectionInfo = array("UID" => "localhost", "pwd" => "Aakash@123", "Database" => "biodb", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+// $serverName = "tcp:dbforbio.database.windows.net,1433";
+// $conn = sqlsrv_connect($serverName, $connectionInfo);
 
 // $servername = "localhost";  // Replace with your MySQL server name (usually "localhost" if it's on the same machine)
 // $username = "root";         // MySQL username
